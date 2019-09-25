@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"/>
-		<title>ОстандартеHTML5</title>
+		<title>123</title>
 	</head>
 	<body>
-		С 28 октября 2014 года Консорциум Всемирной паутины официально рекомендует при создании использовать HTML5, который является языком для структурирования содержимого всемирной паутины
+			<script>
+					function getcos(){
+					let a=(document.getElementById("numbers").value);
+					document.getElementById("findcose").value=Math.cos(a);
+					}
+				</script>
+		<form>
+			<label for="numbers">Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ x РґР»СЏ РєРѕС‚РѕСЂРѕРіРѕ РЅСѓР¶РЅРѕ СѓР·РЅР°С‚СЊ cos:</label>
+			<input type="text" name="numbers" id="numbers">
+			<br>
+			<label for="findcos">РћС‚РІРµС‚:</label>
+			<input type="text" name="findcose" id="findcose">
+			<br>
+			<input type="button" onclick="getcos()" id="btn" value="Submit">
+		</form>
+		
 	</body>
 </html>
