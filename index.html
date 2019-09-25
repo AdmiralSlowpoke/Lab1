@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>123</title>
+		<title>Золотухин Максим ЕТ-313</title>
 	</head>
 	<body>
 			<script>
@@ -10,6 +10,8 @@
 					document.getElementById("findcose").value=Math.cos(a);
 					}
 				</script>
+		<p>Вариант 2</p>
+		<p>Задание 1:</p>
 		<form>
 			<label for="numbers">Введите значение x для которого нужно узнать cos:</label>
 			<input type="text" name="numbers" id="numbers">
@@ -17,8 +19,31 @@
 			<label for="findcos">Ответ:</label>
 			<input type="text" name="findcose" id="findcose">
 			<br>
-			<input type="button" onclick="getcos()" id="btn" value="Submit">
+			<input type="button" onclick="getcos()" id="btn" value="Ok">
 		</form>
-		
+		<br>
+		<p>Задание 2:</p>
+		<script>
+			
+			let paragraph=document.createElement("p");
+			paragraph.textContent="Нажмите кнопку для замены текста страницы";
+			let btn2=document.createElement("button");
+			let text2=document.createTextNode("Да");
+			let btn3=document.createElement("button");
+			let text3=document.createTextNode("Нет");
+			btn2.onclick=function(){
+				let a=5;
+				let b=6;
+				paragraph.textContent=a+b;
+				document.body.append(paragraph);
+				document.body.append(btn2);
+				document.body.append(btn3);
+			};
+			btn2.appendChild(text2);
+			btn3.appendChild(text3);
+			document.body.append(paragraph);
+			document.body.append(btn2);
+			document.body.append(btn3);
+		</script>
 	</body>
 </html>
