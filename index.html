@@ -45,5 +45,21 @@
 			document.body.append(btn2);
 			document.body.append(btn3);
 		</script>
+		<br>
+		<p>Задание 3:</p>
+		<script>
+			let refregirator=new Object();
+			refregirator.color="Red";
+			refregirator.type="Toshiba";
+			refregirator.model="MK2";
+			refregirator.price=50000;
+			function showrefg(){
+				document.body.append("Цвет холодильника "+refregirator.color);
+				document.body.append("Марка холодильника "+refregirator.type);
+				document.body.append("Модель холодильника "+refregirator.model);
+				document.body.append("Цена холодильника "+refregirator.price);
+			}
+		</script>
+		<input type="button" id="btn4" value="Click me" onclick="showrefg()">
 	</body>
 </html>
